@@ -2,6 +2,7 @@ from rest_framework import viewsets, response
 from .models import Book
 from .serializers import BookSerializer
 
+# TODO: Figure this out later
 class BookViewSet(viewsets.ModelViewSet):
     queryset = Book.objects.all()
     serializer_class = BookSerializer
